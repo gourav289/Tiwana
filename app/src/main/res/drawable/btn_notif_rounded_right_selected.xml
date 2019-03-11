@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/notif_selected" />
+
+    <corners
+        android:bottomLeftRadius="0dp"
+        android:bottomRightRadius="@dimen/btn_notif_radius"
+        android:topLeftRadius="0dp"
+        android:topRightRadius="@dimen/btn_notif_radius" />
+</shape>

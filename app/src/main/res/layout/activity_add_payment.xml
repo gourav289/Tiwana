@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp">
+
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/amount"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading" />
+
+            <com.gk.myapp.customs.EditTextTitil
+                android:id="@+id/ed_amount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/list_green"
+                android:gravity="top"
+                android:minHeight="160dp"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal"
+                android:maxLines="1"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionNext"/>
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/payment_mode"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading" />
+
+            <Spinner
+                android:id="@+id/spn_payment_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@null" />
+
+
+            <LinearLayout android:id="@+id/lin_cheque_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/cheque_no"
+                    android:textColor="@color/dark_green_text"
+                    android:textSize="@dimen/text_size_heading" />
+
+                <com.gk.myapp.customs.EditTextTitil
+                    android:id="@+id/ed_cheque_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/list_green"
+                    android:gravity="top"
+                    android:minHeight="160dp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal"
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"/>
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/lin_transaction_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/transaction_id"
+                    android:textColor="@color/dark_green_text"
+                    android:textSize="@dimen/text_size_heading" />
+
+                <com.gk.myapp.customs.EditTextTitil
+                    android:id="@+id/ed_transaction_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/list_green"
+                    android:gravity="top"
+                    android:minHeight="160dp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"/>
+            </LinearLayout>
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/date"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/list_green">
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:id="@+id/txt_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:id="@+id/iv_from"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/ed_bg_logo"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/ic_calendar" />
+
+            </RelativeLayout>
+
+            <com.gk.myapp.customs.TextViewTitil android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/party_name"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading" />
+
+            <Spinner
+                android:id="@+id/spn_party_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@null" />
+
+            <com.gk.myapp.customs.ButtonTitilSemi
+                android:id="@+id/btn_add_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@color/ed_bg_logo"
+                android:text="@string/btn_add_new_payment"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

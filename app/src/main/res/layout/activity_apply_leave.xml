@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp">
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_of_leave"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading" />
+
+            <RadioGroup
+                android:id="@+id/rad_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/chk_medical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/chk_selector"
+                    android:paddingLeft="10dp"
+                    android:text="@string/medical"
+                    android:textColor="@color/dark_green_text"
+                    android:textSize="@dimen/text_size_small"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/chk_casual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:button="@drawable/chk_selector"
+                    android:paddingLeft="10dp"
+                    android:text="@string/casual"
+                    android:textColor="@color/dark_green_text"
+                    android:textSize="@dimen/text_size_small" />
+
+                <RadioButton
+                    android:id="@+id/chk_emergency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:button="@drawable/chk_selector"
+                    android:paddingLeft="10dp"
+                    android:text="@string/emergency"
+                    android:textColor="@color/dark_green_text"
+                    android:textSize="@dimen/text_size_small" />
+
+            </RadioGroup>
+
+
+            <!--<Spinner
+                android:id="@+id/spn_no_of_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@null" />-->
+
+
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/from"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/list_green">
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:id="@+id/txt_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:hint="@string/select_from_date"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:id="@+id/iv_from"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/ed_bg_logo"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/ic_calendar" />
+
+            </RelativeLayout>
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/to"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/list_green">
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:id="@+id/txt_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:hint="@string/select_to_date"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <ImageView
+                    android:id="@+id/iv_to"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/ed_bg_logo"
+                    android:scaleType="centerInside"
+                    android:src="@mipmap/ic_calendar" />
+
+            </RelativeLayout>
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/no_of_days"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading" />
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:id="@+id/txt_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_heading"
+                android:background="@color/list_green"/>
+
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/reason_for_leave"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading" />
+
+            <com.gk.myapp.customs.EditTextTitil
+                android:id="@+id/ed_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/list_green"
+                android:gravity="top"
+                android:hint="@string/enter_reason"
+                android:minHeight="160dp"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal" />
+
+            <com.gk.myapp.customs.ButtonTitilSemi
+                android:id="@+id/btn_apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/ed_bg_logo"
+                android:text="@string/btn_apply"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

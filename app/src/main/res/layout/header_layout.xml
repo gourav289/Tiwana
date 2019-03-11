@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/action_bar_color"
+    android:orientation="vertical">
+
+    <FrameLayout android:id="@+id/frm_left"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true">
+        <ImageButton
+            android:id="@+id/ibtn_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/trans"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_back"
+            android:layout_gravity="left"/>
+
+        <com.gk.myapp.customs.CustomTextViewBold
+            android:id="@+id/txt_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/very_small"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+
+
+    <com.gk.myapp.customs.TextViewTitil
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/frm_right"
+        android:layout_toRightOf="@+id/frm_left"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_size_title" />
+
+
+    <FrameLayout android:id="@+id/frm_right"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true">
+
+        <ImageButton
+            android:id="@+id/ibtn_right"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/trans"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_logout"
+            android:layout_gravity="right"/>
+
+        <com.gk.myapp.customs.CustomTextViewBold
+            android:id="@+id/txt_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="Create\n Order"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/very_small"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+</RelativeLayout>

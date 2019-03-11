@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="MyCustomGreenButton" parent="android:Widget.Button">
+        <item name="android:background">@drawable/bg_green_rect_btn</item>
+        <item name="android:textColor">@color/green_text</item>
+    </style>
+
+    <style name="MyCustomEditText" parent="android:Widget.EditText">
+        <item name="android:background">@color/app_light_green</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/ed_padding</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/grey_text</item>
+    </style>
+
+    <style name="MyCustomGreenButtonFilled" parent="android:Widget.Button">
+        <item name="android:background">@color/tab_btn</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+</resources>

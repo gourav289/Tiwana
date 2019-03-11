@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp">
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type_of_leave"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading"
+                />
+
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:id="@+id/txt_type"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal"
+                android:background="@color/list_green"/>
+
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/no_of_days"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading" />
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:id="@+id/txt_days"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal"
+                android:background="@color/list_green"/>
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/from"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading" />
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:id="@+id/txt_from"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal"
+                android:background="@color/list_green"/>
+
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/to"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading" />
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:id="@+id/txt_to"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal"
+                android:background="@color/list_green"/>
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/reason_for_leave"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading" />
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:id="@+id/txt_reason"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal"
+                android:background="@color/list_green"/>
+
+            <LinearLayout android:id="@+id/lin_bottom_btns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:id="@+id/txt_approve"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_leave_status_green"
+                    android:gravity="center"
+                    android:text="Approve"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_heading"
+                    android:visibility="gone"/>
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="2dp"/>
+                <com.gk.myapp.customs.TextViewTitil
+                    android:id="@+id/txt_reject"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_leave_status_orange"
+                    android:gravity="center"
+                    android:text="Reject"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_heading"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

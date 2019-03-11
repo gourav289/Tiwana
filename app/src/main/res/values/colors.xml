@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="app_status_bar">#6b8e30</color>
+    <color name="action_bar_color">#95c248</color>
+    <color name="app_bg">#ffffff</color>
+    <color name="button_color_dark">#BA3C2E</color>
+    <color name="text_white">#ffffff</color>
+    <color name="text_black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="ed_grey">#838383</color>
+    <color name="trans">#00000000</color>
+    <color name="chat_rec">#cac3c3</color>
+    <color name="chat_sender">#2c2c2c</color>
+    <color name="route_color">#0084FF</color>
+    <color name="first_screen_bg">#d8d1d1</color>
+    <color name="blur">#cc000000</color>
+    <color name="grey_text">#c0c0c0</color>
+
+    <color name="app_light_green">#82b745</color>
+    <color name="app_dark_green">#6b8e30</color>
+
+    <!--progress-->
+    <color name="progress_start">#6095c248</color>
+    <color name="progress_center">#9095c248</color>
+    <color name="progress_end">#95c248</color>
+
+    <color name="green_text">#83b633</color>
+    <color name="dark_green_text">#334e25</color>
+    <color name="app_color">#e2f0d7</color>
+
+    <color name="list_grey">#e2f0d7</color>
+    <color name="list_green">#cbe5b5</color>
+    <color name="orange">#ff5d00</color>
+    <color name="green_btn">#9dcd23</color>
+
+    <color name="ed_hint">#d1e3b9</color>
+
+    <color name="ed_bg">#9bc559</color>
+    <color name="ed_bg_logo">#93c13b</color>
+
+    <color name="light_grey">#bfc4ca</color>
+    <color name="dark_grey">#6b7b8a</color>
+
+    <color name="notif_selected">#6d8c2f</color>
+    <color name="notif_unselected">#79a045</color>
+    <color name="tab_btn">#779e31</color>
+
+    <color name="light_green_bg">#E2F0D7</color>
+    <color name="red">#ff0000</color>
+
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <com.gk.myapp.customs.EditTextTitil
+        android:id="@+id/ed_txt"
+        style="@style/MyCustomEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/ed_size"
+        android:inputType="number"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.gk.myapp.customs.ButtonTitilSemi
+            android:id="@+id/btn_ok"
+            style="@style/MyCustomGreenButton"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="@string/btn_ok"
+            android:textSize="@dimen/text_size_button" />
+
+        <com.gk.myapp.customs.ButtonTitilSemi
+            android:id="@+id/btn_cancel"
+            style="@style/MyCustomGreenButton"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="@string/btn_cancel"
+            android:textSize="@dimen/text_size_button" />
+
+    </LinearLayout>
+
+</LinearLayout>

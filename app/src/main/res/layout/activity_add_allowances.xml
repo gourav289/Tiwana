@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lin_bottom_btns">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp">
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="@string/add_allowance_msg"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading"
+                android:layout_above="@+id/lin_bottom_btns"
+                android:padding="30dp"/>
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/travelling_allowance"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading"
+                android:visibility="gone"/>
+
+            <com.gk.myapp.customs.EditTextTitil
+                android:id="@+id/ed_travelling_allowance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/list_green"
+                android:gravity="top"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal"
+                android:visibility="gone"
+                android:inputType="numberDecimal"/>
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/daily_allowance"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading" />
+
+            <com.gk.myapp.customs.EditTextTitil
+                android:id="@+id/ed_daily_allowance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/list_green"
+                android:gravity="top"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal"
+                android:inputType="numberDecimal"/>
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/other_allowance"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading" />
+
+            <com.gk.myapp.customs.EditTextTitil
+                android:id="@+id/ed_other_allowance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/list_green"
+                android:gravity="top"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_normal"
+                android:inputType="numberDecimal"/>
+
+            <com.gk.myapp.customs.ButtonTitilSemi
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:background="@color/ed_bg_logo"
+                android:text="@string/btn_submit"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_heading" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

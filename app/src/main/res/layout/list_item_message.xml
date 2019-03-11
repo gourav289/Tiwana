@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <com.gk.myapp.utils.CircleImageView
+            android:id="@+id/iv_profile_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/dummy_pic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp">
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:id="@+id/txt_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/txt_date"
+                    android:text="Title"
+                    android:textColor="@color/dark_green_text"
+                    android:textSize="@dimen/text_size_large" />
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:id="@+id/txt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="22 Nov 2016, 11:31 AM"
+                    android:textColor="@color/grey_text"
+                    android:textSize="@dimen/very_small" />
+            </RelativeLayout>
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:id="@+id/txt_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/txt_date"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="Subject"
+                android:textColor="@color/green_text"
+                android:textSize="@dimen/text_size_normal" />
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:id="@+id/txt_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/txt_date"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:text="This is a dummy text this is a dummy text just for testing designs"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="50dp"
+        android:background="@color/grey_text" />
+</LinearLayout>

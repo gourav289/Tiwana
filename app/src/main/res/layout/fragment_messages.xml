@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/action_bar_color"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <com.gk.myapp.customs.ButtonTitil
+            android:id="@+id/btn_inbox"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_notif_rounded_left_selected"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="@string/inbox"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small" />
+
+
+
+        <com.gk.myapp.customs.ButtonTitil
+            android:id="@+id/btn_sent"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_notif_rounded_right_unselected"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="@string/sent"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small" />
+
+
+    </LinearLayout>
+    <include layout="@layout/list_view_layout" />
+</LinearLayout>

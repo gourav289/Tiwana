@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customNS="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lin_tabs"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="-18dp" />
+
+
+    <LinearLayout
+        android:id="@+id/lin_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/trans"
+        android:orientation="horizontal">
+
+
+        <com.gk.myapp.customs.CustomTabButton
+            android:id="@+id/tab_products"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/trans"
+            customNS:bg_color="@color/tab_btn"
+            customNS:selected="true"
+            customNS:text="@string/btn_products" />
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/tab_btn_height"
+            android:background="@color/trans" />
+
+        <com.gk.myapp.customs.CustomTabButton
+            android:id="@+id/tab_payments"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            customNS:bg_color="@color/tab_btn"
+            customNS:selected="false"
+            customNS:text="@string/btn_payments" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/tab_btn_height"
+            android:background="@color/trans" />
+
+        <com.gk.myapp.customs.CustomTabButton
+            android:id="@+id/tab_target"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/trans"
+            customNS:bg_color="@color/tab_btn"
+            customNS:selected="false"
+            customNS:text="@string/btn_target" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

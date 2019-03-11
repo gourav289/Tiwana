@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lin_bottom_btns">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_profile_pic"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/lin_bottom_btns"
+                android:layout_below="@id/iv_profile_pic"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/name"
+                    android:textColor="@color/dark_green_text"
+                    android:textSize="@dimen/text_size_heading" />
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:id="@+id/txt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/list_green"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/age"
+                    android:textColor="@color/dark_green_text"
+                    android:textSize="@dimen/text_size_heading" />
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:id="@+id/txt_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/list_green"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/email"
+                    android:textColor="@color/dark_green_text"
+                    android:textSize="@dimen/text_size_heading" />
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:id="@+id/txt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/list_green"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/emp_code"
+                    android:textColor="@color/dark_green_text"
+                    android:textSize="@dimen/text_size_heading" />
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:id="@+id/txt_emp_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/list_green"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/area_code"
+                    android:textColor="@color/dark_green_text"
+                    android:textSize="@dimen/text_size_heading"
+                    android:visibility="gone"/>
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:id="@+id/txt_area_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"
+                    android:background="@color/list_green"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/mobile"
+                    android:textColor="@color/dark_green_text"
+                    android:textSize="@dimen/text_size_heading" />
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:id="@+id/txt_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/list_green"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/address"
+                    android:textColor="@color/dark_green_text"
+                    android:textSize="@dimen/text_size_heading" />
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:id="@+id/txt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/list_green"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/city"
+                    android:textColor="@color/dark_green_text"
+                    android:textSize="@dimen/text_size_heading"
+                    android:visibility="gone"/>
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:id="@+id/txt_city"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/list_green"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/state"
+                    android:textColor="@color/dark_green_text"
+                    android:textSize="@dimen/text_size_heading" />
+
+                <com.gk.myapp.customs.TextViewTitil
+                    android:id="@+id/txt_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/list_green"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_normal" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/lin_bottom_btns"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/green_text"
+            android:text="@string/start_job"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/green_text"
+            android:text="@string/stop_job"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small" />
+
+    </LinearLayout>
+
+</RelativeLayout>

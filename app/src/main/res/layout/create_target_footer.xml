@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <com.gk.myapp.customs.TextViewTitil
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_month"
+        android:textColor="@color/dark_green_text"
+        android:textSize="@dimen/text_size_normal" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Spinner
+            android:id="@+id/spn_month"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@null" />
+
+        <Spinner
+            android:id="@+id/spn_year"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@null" />
+
+    </LinearLayout>
+
+    <com.gk.myapp.customs.ButtonTitilSemi
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@color/ed_bg_logo"
+        android:text="@string/btn_create_target"
+        android:textColor="@color/dark_green_text"
+        android:textSize="@dimen/text_size_normal" />
+
+</LinearLayout>

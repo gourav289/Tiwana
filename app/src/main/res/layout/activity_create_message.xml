@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.gk.myapp.customs.EditTextTitil
+                android:id="@+id/ed_message"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/list_green"
+                android:gravity="top"
+                android:hint="@string/enter_message"
+                android:padding="10dp"
+                android:textColor="@color/green_text"
+                android:textSize="@dimen/text_size_normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/iv_attachment1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_add" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="3" />
+
+                <ImageView
+                    android:id="@+id/iv_attachment2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_add" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="3" />
+
+                <ImageView
+                    android:id="@+id/iv_attachment3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_add" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+
+            <com.gk.myapp.customs.ButtonTitilSemi
+                android:id="@+id/btn_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/ed_bg_logo"
+                android:text="@string/btn_send"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_normal" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gk.myapp">
+
+    <permission
+        android:name="com.gk.myapp.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.gk.tiwana.permission.MAPS_RECEIVE" />
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!-- GCM permission -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.gk.tiwana.permission.C2D_MESSAGE" />
+    <!-- To allow the application to use GCM, -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="com.gk.myapp.app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.gk.myapp.activities.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gk.myapp.activities.BaseActivityTabs"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+
+        </activity>
+
+        <activity
+            android:name="com.gk.myapp.activities.ApplyLeaveActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name="com.gk.myapp.activities.CreateMessageActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.gk.myapp.activities.DistributeTargetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gk.myapp.activities.CreateTargetActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.gk.myapp.activities.SelectAsmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gk.myapp.activities.TargetDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gk.myapp.activities.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gk.myapp.activities.MyLeaveDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gk.myapp.activities.StaffLeaveDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.gk.myapp.activities.MessageDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.so.AddPaymentActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.PaymentHistoryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.cons.SignUpActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.cons.EnquiryActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.BaseActivityTabsCons"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:launchMode="singleTask"/>
+        <activity
+            android:name=".activities.cons.CartConsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.cons.PaymentHistoryCustActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddAllowancesActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.so.ProductListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragments.SelectSoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.DummyActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.cons.TargetDetailsActivityCons"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activities.OrderHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.OrderHistoryDetailsActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.gk.myapp.activities.LargeImageActivity" />
+
+        <!--<service android:name="com.gk.myapp.locationupdate.LocationUpdateService" />-->
+
+        <!--<service android:name="com.gk.myapp.locationupdate.MyService" />-->
+
+        <service
+            android:name="com.gk.myapp.locationupdate.LocationUpdate"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name="com.gk.myapp.locationupdate.JobSchedulerService"
+            android:exported="true"
+            android:stopWithTask="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver android:name=".broardcast_receivers.PowerOnOffBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".alarmservice.Alarm"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service
+            android:name=".pushnotifications.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".pushnotifications.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_ic_notification" />
+        &lt;!&ndash; Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. &ndash;&gt;
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />-->
+    </application>
+
+</manifest>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "933486472663",
+    "firebase_url": "https://tiwana-6b687.firebaseio.com",
+    "project_id": "tiwana-6b687",
+    "storage_bucket": "tiwana-6b687.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933486472663:android:9f848807efef5873",
+        "android_client_info": {
+          "package_name": "com.gk.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933486472663-rjh6vnkq8n2fsvv6kft8dq5k6mkq3buo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmxlmqYIWzyvAS5D7mEjbpknmHuAsXj1Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<LinearLayout
+        android:id="@+id/lin_first"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/list_grey"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.gk.myapp.customs.TextViewTitil
+            android:id="@+id/txt_first_half_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_green_text"
+            android:textSize="@dimen/text_size_heading" />
+
+        <com.gk.myapp.customs.TextViewTitil
+            android:id="@+id/txt_first_half_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green_text"
+            android:textSize="@dimen/text_size_normal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_second"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/list_green"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.gk.myapp.customs.TextViewTitil
+            android:id="@+id/txt_second_half_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_green_text"
+            android:textSize="@dimen/text_size_heading" />
+
+        <com.gk.myapp.customs.TextViewTitil
+            android:id="@+id/txt_second_half_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green_text"
+            android:textSize="@dimen/text_size_normal" />
+
+
+    </LinearLayout>-->
+
+
+    <include
+        layout="@layout/list_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

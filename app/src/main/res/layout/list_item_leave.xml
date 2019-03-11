@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_grey"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="match_parent"
+        android:background="@color/green_text" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            >
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Family Function"
+                android:textColor="@color/dark_green_text"
+                android:textSize="@dimen/text_size_normal"
+                android:maxLines="2"
+                android:ellipsize="end"/>
+            <com.gk.myapp.customs.TextViewTitil
+                android:id="@+id/txt_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textColor="@color/green_text"
+                android:textSize="@dimen/text_size_small" />
+            <com.gk.myapp.customs.TextViewRoboto
+                android:id="@+id/txt_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="24-Nov-2016"
+                android:textColor="@color/green_text"
+                android:textSize="@dimen/text_size_normal" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp">
+
+
+            <com.gk.myapp.customs.TextViewTitil
+                android:id="@+id/txt_cancel"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/bg_leave_status_orange"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="5dp"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>
